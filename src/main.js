@@ -3,15 +3,20 @@ import App from './App';
 import VueRouter from 'vue-router';
 import configRouter from './router';
 
-// import MockRenderer from './mock';
-// MockRenderer();
+import VueResource from 'vue-resource';
+
+import MockRenderer from './mock';
+MockRenderer();
 
 Vue.use(VueRouter);
+Vue.use(VueResource);
 
 const router = new VueRouter();
 
 configRouter(router);
 
 router.start(App, '#app');
+
+
 
 

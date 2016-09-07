@@ -13,6 +13,13 @@
     import Menubar from './components/Menubar';
 
     export default {
+        ready: function() {
+            this.$http
+            .get('/featured/userinfo')
+            .then(res => {
+                console.log(res.data);
+            });
+        },
         components: {
             Menubar
         }
