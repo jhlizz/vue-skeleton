@@ -2,15 +2,15 @@ import Mock from 'mockjs';
 
 export default () => {
 
-    const Render = (options) => {
-        Mock.mock(options.url, options.type, options.tpl);
+    const Api = (options) => {
+        Mock.mock(options.url, options.type, options.response);
     };
 
     // 测试
-    Render({
+    Api({
         url: '/featured/userinfo',
         type: 'get',
-        tpl: {
+        response: {
             name: 'hahaha',
             age: 28,
             sex: 'boy'
