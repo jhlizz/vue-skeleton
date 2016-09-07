@@ -6,7 +6,9 @@ import configRouter from './router';
 Vue.use(VueRouter);
 
 const router = new VueRouter();
+
 configRouter(router);
-router.start(Vue.extend(App), '#app');
+
+router.start(App, '#app');
 
 
