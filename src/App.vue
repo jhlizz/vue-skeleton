@@ -11,6 +11,7 @@
 
 <script>
     import Menubar from './components/Menubar';
+    import store from './vuex/store';
 
     export default {
         ready: function() {
@@ -23,7 +24,8 @@
         },
         components: {
             Menubar
-        }
+        },
+        store
     };
 </script>
 

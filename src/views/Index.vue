@@ -1,18 +1,29 @@
 <template>
 
-    <div>{{ msg }}</div>
+    <div>
+        <span>{{ indexMsg }}</span>
+        <button @click='changeData'>点我看看</button>
+    </div>
 
 </template>
 
 
 <script>
+
+    import { changeData } from '../vuex/actions';
+    import { getIndexMsg } from '../vuex/getters';
+
     export default {
-        data () {
-            return {
-                msg: '这是精选的页面！'
+        vuex: {
+            actions: {
+                changeData: changeData
+            },
+            getters: {
+                indexMsg: getIndexMsg
             }
         }
-    }
+    };
+
 </script>
 
 
@@ -26,6 +37,22 @@
         justify-content: center;
         font-size: 70px;
         color: #fff;
+        flex-direction: column;
+    }
+
+    button {
+        width: 30%;
+        height: 60px;
+        margin-top: 60px;
+        background: #fff;
+        font-size: 36px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
+    span {
+        text-align: center;
     }
 
 </style>
