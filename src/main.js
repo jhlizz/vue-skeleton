@@ -5,7 +5,7 @@ import configRouter from './router';
 
 import VueResource from 'vue-resource';
 
-import MockRenderer from './vuex/mock';
+import MockRenderer from 'Vuex/mock';
 MockRenderer();
 
 Vue.use(VueRouter);
@@ -16,7 +16,3 @@ const router = new VueRouter();
 configRouter(router);
 
 router.start(App, '#app');
-
-
-
-

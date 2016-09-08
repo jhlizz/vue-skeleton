@@ -10,8 +10,8 @@
 </template>
 
 <script>
-    import Menubar from './components/Menubar';
-    import store from './vuex/store';
+    import Menubar from 'components/Menubar';
+    import store from 'Vuex/store';
 
     export default {
         ready: function() {

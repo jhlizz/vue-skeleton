@@ -10,16 +10,16 @@
 
 <script>
 
-    import { changeData } from '../vuex/actions';
-    import { getIndexMsg } from '../vuex/getters';
+    import Actions from 'Vuex/actions';
+    import Getters from 'Vuex/getters';
 
     export default {
         vuex: {
             actions: {
-                changeData: changeData
+                changeData: Actions.changeData
             },
             getters: {
-                indexMsg: getIndexMsg
+                indexMsg: Getters.getIndexMsg
             }
         }
     };
