@@ -1,8 +1,3 @@
-// export const getIndexMsg = (state) => {
-//     return state.indexMsg;
-// };
-
-
 const Getters = {
     getIndexMsg (state) {
         return state.indexMsg;

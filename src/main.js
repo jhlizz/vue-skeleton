@@ -2,9 +2,11 @@ import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router';
 import configRouter from './router';
-import MockInit from 'Vuex/mock';
+
 import VueResource from 'vue-resource';
 
+// import Mock模块，并根据当前环境判断是否初始化
+import MockInit from 'Vuex/mock';
 if ('production' !== process.env.NODE_ENV) {
     MockInit();
 }
