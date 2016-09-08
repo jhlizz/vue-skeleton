@@ -2,30 +2,48 @@ import Mock from 'mockjs';
 
 export default () => {
 
-    const Api = (options) => {
+    const mockApiConfig = (options) => {
         Mock.mock(options.url, options.type, options.response);
     };
 
     // 测试1
-    Api({
+    mockApiConfig({
         url: '/featured/userinfo',
         type: 'get',
         response: {
-            name: 'hahaha',
-            age: 28,
-            sex: 'boy'
+            code: 200,
+            success: true,
+            data: {
+                name: 'sea',
+                age: 29,
+                sex: 'man'
+            }
         }
     });
 
     // 测试2
-    Api({
-        url: '/featured/companyInfo',
+    mockApiConfig({
+        url: '/featured/companyList',
         type: 'get',
         response: {
-            name: '80net',
-            age: 10,
-            number: 40,
-            address: '清华信息港a座9楼八零年代科技有限公司'
+            code: 200,
+            success: true,
+            data: [{
+                name: '80net',
+                age: 10,
+                number: 40,
+                address: '清华信息港a座9楼八零年代科技有限公司'
+            }, {
+                name: '80net',
+                age: 10,
+                number: 40,
+                address: '清华信息港a座9楼八零年代科技有限公司'
+            }, {
+                name: '80net',
+                age: 10,
+                number: 40,
+                address: '清华信息港a座9楼八零年代科技有限公司'
+            }]
         }
     });
 
