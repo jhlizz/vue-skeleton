@@ -19,7 +19,8 @@
             .$http
             .get('/featured/userinfo')
             .then(res => {
-                console.log(res.data);
+                console.log('====================请求成功====================');
+                console.log(JSON.parse(res.data));
             });
         },
         components: {
