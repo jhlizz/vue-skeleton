@@ -14,7 +14,8 @@
 
     export default {
         ready: function() {
-            this.$http
+            this
+            .$http
             .get('/featured/userinfo')
             .then(res => {
                 console.log(res.data);

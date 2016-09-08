@@ -5,7 +5,7 @@ import configRouter from './router';
 
 import VueResource from 'vue-resource';
 
-import MockRenderer from './modal/mock';
+import MockRenderer from './vuex/mock';
 MockRenderer();
 
 Vue.use(VueRouter);
