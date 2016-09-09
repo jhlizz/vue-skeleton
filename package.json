@@ -1,8 +1,8 @@
 {
-  "name": "grouplus-featured",
+  "name": "vue-skeleton",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "jhli",
+  "author": "jhlizz",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
