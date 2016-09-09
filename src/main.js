@@ -35,6 +35,8 @@ Vue.http.interceptors.push((request, next) => {
                         break;
                 }
             }
+        } else {
+            console.log('服务器错误');
         }
         return response;
     });
