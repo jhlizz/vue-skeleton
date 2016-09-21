@@ -54,5 +54,4 @@
     span {
         text-align: center;
     }
-
 </style>
